@@ -1,0 +1,33 @@
+
+WpfWindow("Micro Focus MyFlight Sample").WpfEdit("agentName").Set "John"
+WpfWindow("Micro Focus MyFlight Sample").WpfEdit("password").SetSecure "5d9f649591978f341004"
+WpfWindow("Micro Focus MyFlight Sample").WpfButton("OK").Click
+WpfWindow("Micro Focus MyFlight Sample").WpfComboBox("fromCity").Select "Frankfurt"
+WpfWindow("Micro Focus MyFlight Sample").WpfComboBox("toCity").Select "Portland"
+WpfWindow("Micro Focus MyFlight Sample").WpfComboBox("Class").Select "Business"
+WpfWindow("Micro Focus MyFlight Sample").WpfButton("FIND FLIGHTS").Click
+WpfWindow("Micro Focus MyFlight Sample").WpfTable("flightsDataGrid").SelectCell 0,1
+WpfWindow("Micro Focus MyFlight Sample").Click 1233,766
+WpfWindow("Micro Focus MyFlight Sample").WpfButton("SELECT FLIGHT").Click
+WpfWindow("Micro Focus MyFlight Sample").WpfEdit("passengerName").Set Datatable.Value("FirstCasePassenger",dtlocalsheet)
+WpfWindow("Micro Focus MyFlight Sample").WpfButton("ORDER").Click
+WpfWindow("Micro Focus MyFlight Sample").WpfButton("NEW SEARCH").Click
+WpfWindow("Micro Focus MyFlight Sample").WpfObject("London to Paris,  all").Check CheckPoint("London to Paris,  all inclusive")
+WpfWindow("Micro Focus MyFlight Sample").WpfComboBox("fromCity").Select "San Francisco"
+WpfWindow("Micro Focus MyFlight Sample").WpfComboBox("toCity").Select "Denver"
+WpfWindow("Micro Focus MyFlight Sample").WpfComboBox("Class").Select "Business"
+WpfWindow("Micro Focus MyFlight Sample").WpfButton("FIND FLIGHTS").Click
+WpfWindow("Micro Focus MyFlight Sample").WpfTable("flightsDataGrid").SelectCell 1,1
+WpfWindow("Micro Focus MyFlight Sample").WpfButton("SELECT FLIGHT").Click
+WpfWindow("Micro Focus MyFlight Sample").WpfEdit("passengerName").Set Datatable.Value("SecondCasePassenger",dtlocalsheet)
+WpfWindow("Micro Focus MyFlight Sample").WpfButton("ORDER").Click
+WpfWindow("Micro Focus MyFlight Sample").WpfButton("NEW SEARCH").Click
+WpfWindow("Micro Focus MyFlight Sample").WpfComboBox("fromCity").Select "Paris"
+WpfWindow("Micro Focus MyFlight Sample").WpfComboBox("toCity").Select "San Francisco"
+WpfWindow("Micro Focus MyFlight Sample").WpfComboBox("Class").Select "First"
+WpfWindow("Micro Focus MyFlight Sample").WpfObject("London to Paris,  all").Check CheckPoint("London to Paris,  all inclusive_2")
+WpfWindow("Micro Focus MyFlight Sample").WpfButton("FIND FLIGHTS").Click
+WpfWindow("Micro Focus MyFlight Sample").WpfTable("flightsDataGrid").SelectCell 1,4
+WpfWindow("Micro Focus MyFlight Sample").WpfButton("SELECT FLIGHT").Click
+WpfWindow("Micro Focus MyFlight Sample").WpfEdit("passengerName").Set Datatable.Value("ThirdCasePassenger",dtlocalsheet)
+WpfWindow("Micro Focus MyFlight Sample").WpfButton("ORDER").Click
